@@ -1,4 +1,10 @@
+## Install stuff
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("snpStats", version = "3.8")
+BiocManager::install("SNPRelate", version = "3.8")
 
+######
 
 library(snpStats)
 load("conversionTable.RData")
